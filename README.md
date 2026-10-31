@@ -1,31 +1,33 @@
-# Hi there, I'm a Senior SaaS Support & API Integration Engineer! 👋
+# SaaS RCA Incident Playbooks
 
-Experienced Technical Support Engineer with *5 years of continuous enterprise B2B SaaS experience* specializing in Tier 2/Tier 3 application troubleshooting, REST API testing, and automated billing engine debugging. I leverage structured root-cause analysis (RCA) to bridge the gap between global enterprise clients and core developer squads.
+A small collection of root cause analysis (RCA) write-ups, triage queries and API checks for common problems in B2B SaaS integrations.
 
-🇩🇪 *Relocation Status:* Fully eligible for the Germany Opportunity Card (Chancenkarte) with maximum credential points. Central digital ZAB evaluation initiated. Ready to relocate and onboard locally in Germany within a standard 60-day window. Target locations: Berlin, Munich, Frankfurt, or Remote within Germany.
+> **All scenarios here are fictional.** They are written for practice and as a portfolio. They contain no real customer data, no employer data and no internal details from any company.
 
----
+## Why this repo exists
 
-### 🛠️ Technical Toolset & Competencies
+When an integration breaks, the useful questions are always the same: what changed, who is affected, what does the evidence say, and how do we stop it happening again. These playbooks show how I work through that, from the first symptom to the follow-up actions.
 
-- *APIs & Integrations:* REST APIs, Postman, JSON Payloads, Webhooks, HTTP Status Code Triage
-- *Incident Management & Agile:* Jira Service Management, Confluence, SLA Tracking, RCA Incident Post-Mortems, Defect Triage
-- *Domain Systems:* High-volume B2B SaaS platforms, FinTech workflows, billing pipelines, taxation calculations (AvaTax ecosystem)
+## What is inside
 
----
+| Folder | Contents |
+|---|---|
+| `templates/` | A reusable RCA template |
+| `playbooks/` | Three sample RCAs: webhook delivery failures, OAuth 401 errors, and 429 rate limits during a bulk sync |
+| `sql/` | Example triage queries for a fictional incident database |
+| `postman/` | A Postman collection that checks HTTP status handling against the public httpbin.org service |
 
-### 📁 Technical Portfolio & Playbooks
+## How to use it
 
-Here, I archive mock playbooks and integration scripts simulating real-world Tier 3 technical support operations:
+1. Start with `templates/rca-template.md` for the structure of an incident write-up.
+2. Read one playbook in `playbooks/` to see the template applied.
+3. Import `postman/http-status-triage.postman_collection.json` into Postman to try the status checks yourself.
+4. Adapt the queries in `sql/triage-queries.sql` to your own schema.
 
-- 🚀 *[SaaS-RCA-Incident-Playbooks](https://github.com)*: A repository containing sample Root Cause Analysis (RCA) and production incident post-mortems mapping out software defect detection, payload analysis, and resolution steps.
+## Topics
 
----
+`rca` `incident-management` `rest-api` `postman` `webhooks` `sql` `troubleshooting` `saas`
 
-### 🤝 Let's Connect!
+## About me
 
-- 💼 *LinkedIn:* www.linkedin.com/in/
-aditi-sonawane-b7b785185
-
-
-Feel free to explore my repositories or reach out regarding open Senior Technical Support or Application Integration Engineering roles in Germany!
+I am a technical engineer with 4+ years of experience, working on a cloud-based B2B SaaS product. See my profile at [github.com/aditi-prodengineer](https://github.com/aditi-prodengineer).
